@@ -3,15 +3,17 @@ Object.freeze(assert);
 const getZerosCount = require('./src/index');
 
 describe('Zeros', () => {
-  it('0', () => {
+   it('0', () => {
     const zerosCount = getZerosCount(10, 10);
     assert.equal(zerosCount, 2);
   });
 
-  it('2', () => {
+   it('2', () => {
     const zerosCount = getZerosCount(46899647, 232);
     assert.equal(zerosCount, 1674985);
   });
+
+  
 
   it('3', () => {
     const zerosCount = getZerosCount(82557730, 84);
@@ -41,7 +43,7 @@ describe('Zeros', () => {
   it('8', () => {
     const zerosCount = getZerosCount(47815664, 104);
     assert.equal(zerosCount, 3984635);
-  });
+  }); 
 
   it('9', () => {
     const zerosCount = getZerosCount(60559525, 147);
@@ -52,7 +54,7 @@ describe('Zeros', () => {
     const zerosCount = getZerosCount(92357634, 187);
     assert.equal(zerosCount, 5772349);
   });
-
+ 
   it('11', () => {
     const zerosCount = getZerosCount(69738640, 236);
     assert.equal(zerosCount, 1202388);
@@ -71,7 +73,7 @@ describe('Zeros', () => {
   it('14', () => {
     const zerosCount = getZerosCount(55481864, 224);
     assert.equal(zerosCount, 9246972);
-  });
+  }); 
 
   it('15', () => {
     const zerosCount = getZerosCount(88341643, 66);
@@ -156,7 +158,7 @@ describe('Zeros', () => {
   it('31', () => {
     const zerosCount = getZerosCount(72239436, 122);
     assert.equal(zerosCount, 1203989);
-  });
+  }); 
 
   it('32', () => {
     const zerosCount = getZerosCount(19848293, 192);
@@ -491,15 +493,16 @@ describe('Zeros', () => {
   it('98', () => {
     const zerosCount = getZerosCount(18835759, 190);
     assert.equal(zerosCount, 1046428);
-  });
+  }); 
 
   it('99', () => {
     const zerosCount = getZerosCount(72300914, 160);
     assert.equal(zerosCount, 14460180);
-  });
+  }); 
 
-  it('100', () => {
+   it('100', () => {
     const zerosCount = getZerosCount(4821527, 250);
     assert.equal(zerosCount, 401792);
-  });
+  });  
+   
 });
